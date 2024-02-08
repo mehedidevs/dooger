@@ -43,6 +43,10 @@ android {
         correctErrorTypes = true
     }
 
+    viewBinding {
+        enable = true
+    }
+
 }
 
 dependencies {
@@ -65,4 +69,6 @@ dependencies {
     kapt("com.google.dagger:hilt-android-compiler:2.44")
 
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
+
+    implementation("androidx.activity:activity-ktx:1.8.2")
 }
